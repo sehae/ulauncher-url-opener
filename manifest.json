@@ -1,0 +1,18 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Url opener",
+  "description": "Opens urls directly in chrome",
+  "developer_name": "Arman Kiani",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.01
+  },
+  "preferences": [
+    {
+      "id": "demo_kw",
+      "type": "keyword",
+      "name": "URL",
+      "default_value": "open"
+    }
+  ]
+}
