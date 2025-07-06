@@ -45,7 +45,7 @@ class KeywordQueryEventListener(EventListener):
             ExtensionResultItem(
                 icon='images/icon.png',
                 name= f"Open in browser",
-                description= f"Open url {url_opener.complete_url(event.get_argument())} in chrome",
+                description= f"Open url {url_opener.complete_url(event.get_argument())} {webbrowser.get().name}",
                 on_enter=ExtensionCustomAction({"url":event.get_argument()}, keep_app_open=False))
         ]
 
